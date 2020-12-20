@@ -10,8 +10,8 @@ from .serializers import PokemonSerializer
 @api_view(['GET'])
 def pokemonAPIRoute(request):
     api_urls = {
-        'Pokemon List':'/pokemon/',
-        'Pokemon Content': '/pokemon/<str:pk>'  
+        'Pokemon List':'/pokemon-list/',
+        'Pokemon Content': '/pokemon-list/<str:pk>'  
     }
     return Response(api_urls)
 
